@@ -1,0 +1,1 @@
+Utilizando React e Redux, implemente uma calculadora com as quatro operações aritméticas básicas.
