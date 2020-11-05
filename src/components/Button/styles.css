@@ -1,0 +1,22 @@
+.button-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e1e6;
+  width: 60px;
+  height: 36px;
+  font-size: 16px;
+  color: #888;
+  outline: 1px solid #888;
+}
+
+.operator {
+  background-color: #fe9241;
+  color: #fff;
+}
+
+.clear-button {
+  background-color: #888;
+  width: 240px;
+}
