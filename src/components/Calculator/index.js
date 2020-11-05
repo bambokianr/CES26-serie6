@@ -1,22 +1,19 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
+
 import { useSelector } from 'react-redux';
+
 import './styles.css';
 
 import Input from '../Input';
 import Button from '../Button';
 
 export default function Calculator() {
-  const [inputValue, setInputValue] = useState(12);
-  const state = useSelector(state => state);
-
-  const handleClear = useCallback(() => {
-    setInputValue(0);
-  }, []);
+  const { display } = useSelector(state => state.operation);
 
   return (
     <div>
-      <Input value={inputValue} />
-      <Button isClear onClick={handleClear}>clear</Button>
+      <Input value={display} />
+      <Button isClear>clear</Button>
       <div className="row">
         <Button>7</Button>
         <Button>8</Button>
